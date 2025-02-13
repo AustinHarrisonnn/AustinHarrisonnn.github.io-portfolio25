@@ -70,7 +70,7 @@
 
 
 .project-container{
-  padding-top: 5rem;
+  padding-top: 6rem;
   justify-content: center;
 }
 .project-container .project-header{
@@ -82,4 +82,43 @@
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
+}
+.project-container ul{
+  align-self: center;
+  margin-left: 10rem;
+  gap: 15vw;
+  list-style: none;
+  display: flex;
+}
+.project-container ul li{
+  margin: 0;
+  padding: 0;
+}
+
+
+.project-card{
+  width: 360px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.822);
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.project-card img{
+  width: 100%;
+  height: 6rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.project-card h2{
+  color: black;
+}
+.project-card p{
+  color: black;
+}
+.project-card button{
+  background-color: rgb(40, 111, 158);
 }

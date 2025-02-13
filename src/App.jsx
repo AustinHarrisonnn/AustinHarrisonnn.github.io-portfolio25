@@ -23,7 +23,46 @@ function App() {
         <div className="project-header">
           <h2>Projects</h2>
         </div>
+        <ul>
+          <li>
+            <div className="project-card">
+              <div className="card-header">
+                <img src="src\assets\tiktactoe.PNG" />
+              </div>
+              <div className="card-body">
+                <h2>description...</h2>
+                <p>yap yap yap</p>
+                <button>Take a Look</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="project-card">
+              <div className="card-header">
+                <img src="src\assets\weather.PNG" />
+              </div>
+              <div className="card-body">
+                <h2>description...</h2>
+                <p>yap yap yap</p>
+                <button>Take a Look</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="project-card">
+              <div className="card-header">
+                <img src="src\assets\vdaypic.PNG" />
+              </div>
+              <div className="card-body">
+                <h2>description...</h2>
+                <p>yap yap yap</p>
+                <button>Take a Look</button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
+      <br></br>
     </div>
   )
 }

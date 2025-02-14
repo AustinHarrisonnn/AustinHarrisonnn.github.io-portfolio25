@@ -7,25 +7,32 @@
 
 
 .header{
-  margin-left: 2rem;
-  margin-right: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   color: white;
-  border-radius: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .header h2{
+  font-size: 55px;
   letter-spacing: 0.2rem;
-  font-size: 26px;
-  font-family: "Merriweather", serif;
+  font-family: "flegrei", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding-left: 1rem;
+  color: rgb(119, 186, 240);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.color1{
+  color: rgb(219, 220, 221);
+}
+.color9{
+  color: rgb(219, 220, 221);
 }
 .nav-links{
+  padding-right: 1rem;
   display: flex;
 }
 .nav-links a{
@@ -56,16 +63,34 @@
   display: flex;
   justify-content: space-between;
 }
-.photo-body .intro{
-  background-color: rgba(0, 0, 0, 0.26);
+.photo-body .intro {
+  background-color: rgba(255, 255, 255, 0.514); /* Slight white background */
   margin-left: 2rem;
   border-radius: 1rem;
   padding: 1rem;
   width: 75rem;
+  position: relative; /* Needed for pseudo-elements positioning */
+  overflow: hidden; /* To ensure the pseudo-element stays within the bounds */
 }
+
+.photo-body .intro::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Aligns jagged border to top */
+  left: 0; /* Aligns jagged border to left */
+  right: 0; /* Aligns jagged border to right */
+  bottom: 0; /* Aligns jagged border to bottom */
+  background-color: rgba(102, 166, 218, 0.89); /* Darker color to make the effect visible */
+  clip-path: polygon(0% 0%, 10% 5%, 20% 10%, 30% 15%, 40% 10%, 50% 20%, 60% 30%, 70% 40%, 80% 45%, 90% 40%, 100% 30%, 100% 100%, 0% 100%, 0% 0%); /* Jagged edges surrounding the box */
+  border-radius: 1rem; /* Matches the rounded corners */
+  z-index: 0; /* Keeps it behind the content */
+}
+
 .photo-body .intro h1{
+  position: relative;
   padding-top: 16rem;
   padding-left: 1.5rem;
+  z-index: 1;
 }
 
 

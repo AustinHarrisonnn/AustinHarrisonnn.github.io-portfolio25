@@ -5,13 +5,30 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.App{
+  background-color: #355c7a;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  height: 100%;
+  background-repeat: repeat; /* Allow the background image to repeat */
+  animation: moveBackground 159s linear infinite; /* Apply animation */
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0; /* Starting position */
+  }
+  100% {
+    background-position: -100% 0; /* Move the background to the left */
+  }
+}
+
 
 body {
   margin: 0;
@@ -23,4 +40,3 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
